@@ -6,10 +6,3 @@ jobs:
     name: 'magento isntall & push'
     steps:
       - uses: actions/checkout@v2
-      - name: 'install fresh magento and copy to repo'
-        uses: MAD-I-T/magento-actions@v3.11
-        env:
-          COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
-        with:
-          process: 'create-project'
-          # no_push: 1
