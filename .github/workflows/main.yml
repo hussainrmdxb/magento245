@@ -6,3 +6,7 @@ jobs:
     name: 'magento isntall & push'
     steps:
       - uses: actions/checkout@v2
+    - name: Deployer Get composer.lock from server
+        uses: qlicks/deployer-action@master
+        env: 
+            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
