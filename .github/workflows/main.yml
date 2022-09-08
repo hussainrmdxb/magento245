@@ -12,4 +12,4 @@ jobs:
           COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
         with:
           process: 'create-project'
-          no_push: 1
+          # no_push: 1
